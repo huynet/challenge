@@ -16,11 +16,16 @@ rand13() returns 8
 ## Thinking
 **Initial Attempts**
 - 11 and 13 -> prime numbers -> something with 143 (smallest common multiple)
-- 13 x 13 Matrix with structure like a snake game like this
+- ``1001 = 7 x 11 x 13``. If we could use ```rand11()``` to create a number between ```0001``` and ```1001```, and then ```return number % 13```, that would be ```rand13()```, since 1001 is divisable by 13 => equal probability. Unfortunately, I can't find a way to do this.
+- 13x13 Matrix with structure like a snake game like this. Unsuccessful since can't turn 11 into 13.
 
-| Snake  | Loop/Circle |
-| ------------- | ------------- |
-| ![](https://i.imgur.com/NwDkGYD.jpg=250px)  | ![](https://i.imgur.com/y6ISop6.png=250px) |
+| 1 | 2 | 3 | 4 | 5 |
+| -- |:--:| :--:| -- |:--:
+| x | x | x|  |  |
+|  | x | x| x |  |
+|  |  | x| x | x |
+| x | | | x | x |
+| x | x | |  | x |
 
 ## Designing
 
@@ -54,14 +59,11 @@ return result
 
 ## Implementation time
 - Best case: 1 attempt (as most cases are)
-- Worst case: infinity, we draw 0 every single time (in this case, the odd is ``4/121 ``)
+- Worst case: infinity, we draw 0 every single time (in this case, the odd of drawing zero is ``4/121 ``)
 
-## Interesting
-``1001 = 7 x 11 x 13``
+## 
 
-If we could use ```rand11()``` to create a number between ```0001``` and ```1001```, and then ```return number % 13```, that could be ```rand13()```. Unfortunately, I can't find a way to do this.
-
-I implemented a DYI version, [randAny.py](https://github.com/huynet/challenge/blob/master/randAny.py), when you plug in the ```lower``` and ```upper``` to find a random number between 1 and ```upper```, in this case, ```rand(11, 13)```
+I implemented a DYI version, [randAny.py](https://github.com/huynet/challenge/blob/master/randAny.py), in which you plug in the ```lower``` and ```upper``` to find a random number between 1 and  ```upper```, in this case, ```rand(11, 13)``` would return a random number between 1 and 13.
 
 
 
