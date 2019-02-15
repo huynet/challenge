@@ -1,7 +1,9 @@
 # Coding Challenge
 
 > Time taken: 90 minutes
+
 > Language: Python3
+
 > Source code: [rand13.py](https://github.com/huynet/challenge/blob/master/rand13.py)
 
 ## Question
@@ -60,6 +62,7 @@ return result
 ## Implementation time
 - Best case: 1 attempt (as most cases are).
 - Worst case: infinity, we draw 0 every single time (in this case, the odd of drawing zero is ``4/121 ``).
+- Average case: 1 attempt.
 
 ## Extension
 
