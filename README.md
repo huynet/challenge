@@ -20,7 +20,7 @@ rand13() returns 8
 
 | Snake  | Loop/Circle |
 | ------------- | ------------- |
-| ![](https://i.imgur.com/NwDkGYD.jpg)  | ![](https://i.imgur.com/y6ISop6.png) |
+| ![](https://i.imgur.com/NwDkGYD.jpg=250x)  | ![](https://i.imgur.com/y6ISop6.png=250x) |
 
 ## Designing
 
