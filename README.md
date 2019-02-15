@@ -2,7 +2,7 @@
 
 > Time taken: 90 minutes
 > Language: Python
-> Source code: [rand13.py](https://github.com/huynet/challenge/rand13.py)
+> Source code: [rand13.py](https://github.com/huynet/challenge/blob/master/rand13.py)
 
 ## Question
 
@@ -61,7 +61,7 @@ return result
 
 If we could use ```rand11()``` to create a number between ```0001``` and ```1001```, and then ```return number % 13```, that could be ```rand13()```. Unfortunately, I can't find a way to do this.
 
-I implemented a DYI version, [randAny.py](https://github.com/huynet/challenge/rand1Any.py), when you plug in the ```lower``` and ```upper``` to find a random number between 1 and ```upper```, in this case, ```rand(11, 13)```
+I implemented a DYI version, [randAny.py](https://github.com/huynet/challenge/blob/master/randAny.py), when you plug in the ```lower``` and ```upper``` to find a random number between 1 and ```upper```, in this case, ```rand(11, 13)```
 
 
 
