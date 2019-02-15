@@ -20,9 +20,6 @@ def randUpper(lower, upper):
             if (currentIndex < maxIndex):
                 Matrix[i][j] = (lower * i + j) % upper + 1
 
-    # The matrix that we will use to find a random element from 1-upper
-    # printMatrix(Matrix)
-
     # We found the result of rand13() when result != 0
     # then, result would be an int from 1-upper
     result = 0
@@ -35,11 +32,6 @@ def randUpper(lower, upper):
         attempts += 1
 
     return [result, attempts]
-
-def printMatrix(matrix):
-    print(matrix)
-    for i in range(len(matrix)):
-        print(matrix[i])
 
 # Print multiple times to test the lowest, highest output,
 # as well as attempts taken to find the result
