@@ -16,11 +16,11 @@ rand13() returns 8
 ## Thinking
 **Initial Attempts**
 - 11 and 13 -> prime numbers -> something with 143 (smallest common multiple)
-- 13x13 Matrix with structure like a snake game like this
+- 13 x 13 Matrix with structure like a snake game like this
 
-Snake           |  Loop/Circle
-:-------------------------:|:-------------------------:
-![](https://i.imgur.com/NwDkGYD.jpg =250x)  |  ![](https://i.imgur.com/y6ISop6.png =250x)
+| Snake  | Loop/Circle |
+| ------------- | ------------- |
+| ![](https://i.imgur.com/NwDkGYD.jpg =250x)  | ![](https://i.imgur.com/y6ISop6.png =250x) |
 
 ## Designing
 
@@ -44,9 +44,9 @@ Snake           |  Loop/Circle
 ``` 
 result = 0
 while (result == 0):
-row = rand11() - 1
-col = rand11() - 1
-result = matrix[row][col]
+    row = rand11() - 1
+    col = rand11() - 1
+    result = matrix[row][col]
 
 return result
 
@@ -56,7 +56,7 @@ return result
 - Best case: 1 attempt (as most cases are)
 - Worst case: infinity, we draw 0 every single time (in this case, the odd is ``4/121 ``)
 
-## Some intersting finding
+## Interesting
 ``1001 = 7 x 11 x 13``
 
 If we could use ```rand11()``` to create a number between ```0001``` and ```1001```, and then ```return number % 13```, that could be ```rand13()```. Unfortunately, I can't find a way to do this.
