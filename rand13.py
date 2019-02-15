@@ -10,7 +10,8 @@ def rand13():
     # Create a 11x11 matrix and initialize all elements to zero
     Matrix = [[0 for x in range(11)] for i in range(11)]
 
-    # The last index that we can modify
+    # The last index that we need to modify from zero
+    # We will convert index to row and col later on
     maxIndex = 13*(121//13)
 
     # Set values in array from 1-> 13 consecutively
@@ -19,9 +20,6 @@ def rand13():
             currentIndex = 11 * i + j
             if (currentIndex < maxIndex):
                 Matrix[i][j] = (11 * i + j) % 13 + 1
-
-    # The matrix that we will use to find a random element from 1-13
-    # printMatrix(Matrix)
 
     # We found the result of rand13() when result != 0
     # then, result would be an int from 1-13
@@ -33,11 +31,5 @@ def rand13():
         result = Matrix[row][col]
 
     return result
-        
-
-def printMatrix(matrix):
-    print(matrix)
-    for i in range(len(matrix)):
-        print(matrix[i])
 
 print(rand13())
